@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="便民欢线上经营升级最终评审方案：会员、私域活动、签到、积分自然年规则、门店履约及二期收银接口预留。">
+  <meta name="description" content="便民欢线上经营升级最终评审方案：会员、私域活动、手机分享与两级推广、商品标签分佣、签到、积分自然年规则、履约及二期收银接口预留。">
   <title>便民欢｜线上经营升级方案 · 领导汇报与开发对接</title>
   <link rel="icon" href="../bianminhuan-logo.png">
   <style>
@@ -28,7 +28,7 @@
 @media(max-width:640px){.share-navigation{padding:9px 12px;gap:4px;font-size:12px}.share-navigation a{padding:5px 8px}.share-navigation small{margin-left:0;width:100%;font-size:10px}}
 @media print{.share-navigation{display:none}}
 </style></head>
-<body><nav class="share-navigation" aria-label="方案页面导航"><span class="share-label">便民欢 · 开发沟通</span><a href="../index.html?view=leader#overview">最终方案</a><a href="../index.html?view=leader#front-live">交互原型</a><a href="../steps/index.html">后台步骤图</a><a href="../brief/index.html" aria-current="page">图文与Word</a><a href="../downloads/bianminhuan-offline.html" download="便民欢会员商城升级-可转发网页.html">下载离线网页</a><small>方案演示 · 示例参数待确认 · 分享版 2026.10.27</small></nav>
+<body><nav class="share-navigation" aria-label="方案页面导航"><span class="share-label">便民欢 · 开发沟通</span><a href="../index.html?view=leader#overview">最终方案</a><a href="../index.html?view=leader#front-live">交互原型</a><a href="../steps/index.html">后台步骤图</a><a href="../brief/index.html" aria-current="page">图文与Word</a><a href="../downloads/bianminhuan-offline.html" download="便民欢会员商城升级-可转发网页.html">下载离线网页</a><small>方案演示 · 示例参数待确认 · 总方案整合版 2026.11.02</small></nav>
 <a class="skip" href="#main">跳至正文</a>
 <header class="topbar">
   <div class="topbar-inner">
@@ -54,9 +54,10 @@
       <a href="#checkin"><span>05</span>签到任务与奖励</a>
       <a href="#points"><span>06</span>积分与自然年清零</a>
       <a href="#pos"><span>07</span>二期收银接口预留</a>
-      <a href="#delivery"><span>08</span>报价与验收</a>
+      <a href="#distribution"><span>08</span>手机分享与商品分佣</a>
+      <a href="#delivery"><span>09</span>报价与验收</a>
     </nav>
-    <p class="side-note">2026.10.27<br>本页用于方案评审与费用拆分。<br>正式规则以审批发布版本为准。</p>
+    <p class="side-note">2026.11.02<br>本页用于方案评审与费用拆分。<br>正式规则以审批发布版本为准。</p>
   </aside>
   <main class="content" id="main">
     <section class="hero">
@@ -64,17 +65,18 @@
       <div class="hero-grid">
         <div>
           <h1>让每一次到店，<br>成为<em>下一次回购</em>的起点</h1>
-          <p class="hero-copy">以商城承接成交，以会员沉淀关系，以活动带来回访，以门店完成履约。把首页、直播、拼团、秒杀、上新、签到与积分放到同一条经营路径中，让运营可配置、开发可拆分、上线可验收。</p>
+          <p class="hero-copy">以商城承接成交，以会员沉淀关系，以活动带来回访，以门店完成履约。把首页、直播、拼团、秒杀、上新、签到、积分、手机分享与两级推广放到同一条经营路径中，让运营可配置、开发可拆分、上线可验收。</p>
         </div>
         <aside class="hero-aside" aria-label="本次评审重点">
           <b>本次先确认三件事</b>
-          <p><strong>做哪些功能</strong>：页面、状态和操作路径。<br><strong>规则怎样配置</strong>：积分、奖励、库存和期限。<br><strong>如何分期交付</strong>：一期商城，二期收银互通。</p>
+          <p><strong>做哪些功能</strong>：页面、状态和操作路径。<br><strong>规则怎样配置</strong>：积分、奖励、库存和期限。<br><strong>如何分期交付</strong>：商城基础、分销新增范围、收银接口分别评估。</p>
         </aside>
       </div>
-      <div class="hero-footer"><span><b>最终需求评审版</b> · 2026 年 10 月 27 日</span><span>交互样板可预览；真实接口、生产数据和上线能力须开发验收。</span></div>
+      <div class="hero-footer"><span><b>总方案整合评审版</b> · 2026 年 11 月 2 日</span><span>交互样板可预览；真实接口、生产数据和上线能力须开发验收。</span></div>
     </section>
     <div class="decision-bar">
       <p><b>用户已确定：</b>有效商品消费每满 <b>100 元积 1 分</b>，每单向下取整；积分按<b>到账自然年 12 月 31 日到期，次年清零</b>。</p>
+      <p><b>本轮新增并入：</b>手机分享、两级有效实付分佣、商品标签与参与分佣开关、消费资格模拟和快递签收后结佣。新增范围费用工期另行确认，不自动包含在原1.8万元、15天报价中。</p>
       <p><b>待审批配置：</b>会员门槛、活动售价、储值体验、签到奖品及分值、兑换门槛、库存与预算。下文涉及这些内容的金额或门槛均为<b>方案样例待审批</b>。</p>
     </div>
 
@@ -166,17 +168,26 @@
       <div class="note"><strong>一期先具备独立运营能力：</strong>商城商品、价格与活动库存有自己的配置和履约流程；门店数据未接入时清楚标注来源。二期互通的字段、事件、异常和报价单列，避免把预留页面当作真实对接已经完成。</div>
     </section>
 
+    <section class="chapter" id="distribution">
+      <div class="chapter-head"><span class="chapter-number">08</span><div><div class="chapter-kicker">本轮并入总方案</div><h2>手机分享看得顺，商品分佣管得清</h2><p class="chapter-intro">推广人用手机选品与分享，顾客在商城看门店、规格、价格及收货方式。商品后台决定标签、系列和是否参与分佣，支付时锁定商品与两级关系快照。</p></div></div>
+      <div class="status-line"><span class="tag confirmed">已纳入总方案评审</span><span>5%＋5%、升级门槛和观察天数均为模拟值，正式规则待审批。</span></div>
+      <div class="top-actions"><a class="link-button primary" href="../index.html?view=leader#distribution">看整合后的手机交互原型</a><a class="link-button" href="../distribution/?mode=mobile#mobile" target="_blank" rel="noopener">打开手机完整体验</a><a class="link-button" href="../distribution/#products" target="_blank" rel="noopener">商品标签与分佣设置</a><a class="link-button" href="../distribution/#roles" target="_blank" rel="noopener">角色权限预览</a></div>
+      <div class="table-wrap"><table class="table"><thead><tr><th>场景</th><th>手机端与后台行为</th><th>验收边界</th></tr></thead><tbody><tr><td><strong>二级B推广成交</strong></td><td>有效商品实付100元，示例直接B5元＋直属一级A5元；商品、系列、标签可配两项比例。</td><td>每单支付锁定当时关系和规则；改绑不改老单，独立二级不虚构上级。</td></tr><tr><td><strong>新增与改标签</strong></td><td>商品维护名称、规格、门店价格、系列、标签和分佣总开关；新增默认不分佣。</td><td>标签不等于参与分佣授权；开启后仍须匹配有效规则，同优先级重叠拦截。</td></tr><tr><td><strong>停佣 下架 删除</strong></td><td>停佣商品可正常买但新单不产生佣金；下架或软删除停止新购买，旧链接有状态提示。</td><td>旧已支付订单保留商品、价格、标签、比例和关系快照，结佣退款继续追溯。</td></tr><tr><td><strong>履约与提现</strong></td><td>快递签收并确认收货或自提核销，过观察期且无未结售后后，才给各受益人结佣。</td><td>中途不分钱；退20元后A与B各保留4元；重复通知不重复处理。</td></tr><tr><td><strong>资格与权限</strong></td><td>消费达标成为二级做可操作模拟；推广身份与商城会员等级分开。</td><td>一级仅直属名单和本人收益汇总；二级仅本人脱敏订单，正式后台须校验身份与数据范围。</td></tr></tbody></table></div>
+      <div class="note"><strong>图文与交互分工：</strong>前面的会员、签到与积分图片保留为原版示例；本轮新增的手机分享及商品设置通过上方交互入口查看，避免用旧截图代替新功能。</div>
+      <div class="note red"><strong>新增开发范围另评估：</strong>两级推广、商品分佣改造、物流查询、消费资格和付款通道已进入总方案评审，原1.8万元、15天报价不自动覆盖。新增费用、工期、接口持续费用与验收责任须重新确认。</div>
+    </section>
+
     <section class="chapter" id="delivery">
-      <div class="chapter-head"><span class="chapter-number">08</span><div><div class="chapter-kicker">开发沟通与交付</div><h2>用同一份范围，评费用、排计划、做验收</h2><p class="chapter-intro">评审时同时确认顾客流程、运营配置、后端能力和异常处理。交互样板用于讲清需求，生产能力以测试与验收结果为准。</p></div></div>
-      <div class="two-up"><div class="inset"><h3>开发报价建议分开列</h3><ol class="check-list"><li><div><b>页面与交互：</b>首页、会员、商城、营销、签到及不同状态。</div></li><li><div><b>业务服务：</b>订单、库存、优惠、签到进度、积分与会员成长。</div></li><li><div><b>支付与履约：</b>真实支付、退款、提货码、员工核销与对账。</div></li><li><div><b>运营后台：</b>规则、库存、预算、草稿、审批、发布和版本。</div></li><li><div><b>接口与测试：</b>直播验证、消息授权、异常与并发验收；POS 四类接口单列二期。</div></li></ol></div><div class="inset"><h3>正式角色权限建议</h3><ol class="check-list"><li><div><b>顾客：</b>只访问本人资产、订单、签到和奖励。</div></li><li><div><b>运营：</b>配置活动与草稿，按审批权限发布。</div></li><li><div><b>门店员工：</b>仅处理授权门店的备货和有效核销。</div></li><li><div><b>财务：</b>查看资金、退款和对账，敏感操作留痕。</div></li><li><div><b>管理员：</b>账号、权限、规则版本与系统设置。</div></li></ol></div></div>
+      <div class="chapter-head"><span class="chapter-number">09</span><div><div class="chapter-kicker">开发沟通与交付</div><h2>用同一份范围，评费用、排计划、做验收</h2><p class="chapter-intro">评审时同时确认顾客流程、运营配置、后端能力和异常处理。交互样板用于讲清需求，生产能力以测试与验收结果为准。</p></div></div>
+      <div class="two-up"><div class="inset"><h3>开发报价建议分开列</h3><ol class="check-list"><li><div><b>页面与交互：</b>首页、会员、商城、营销、签到及不同状态。</div></li><li><div><b>业务服务：</b>订单、库存、优惠、签到进度、积分与会员成长。</div></li><li><div><b>支付与履约：</b>真实支付、退款、提货码、员工核销与对账。</div></li><li><div><b>运营后台：</b>规则、库存、预算、草稿、审批、发布和版本。</div></li><li><div><b>新增推广工作包：</b>手机分享、商品标签与开关、两级关系、逐人结佣退款、资格与提现另列费用和工期。</div></li><li><div><b>接口与测试：</b>直播验证、消息授权、异常与并发验收；POS 四类接口单列二期。</div></li></ol></div><div class="inset"><h3>正式角色权限建议</h3><ol class="check-list"><li><div><b>顾客：</b>只访问本人资产、订单、签到和奖励。</div></li><li><div><b>运营：</b>配置活动与草稿，按审批权限发布。</div></li><li><div><b>门店员工：</b>仅处理授权门店的备货和有效核销。</div></li><li><div><b>财务：</b>查看资金、退款和对账，敏感操作留痕。</div></li><li><div><b>管理员：</b>账号、权限、规则版本与系统设置。</div></li></ol></div></div>
       <div class="section-label"><h3>分期推进顺序</h3><span>具体工期与费用由开发评估，未预填承诺</span></div>
       <div class="roadmap"><div class="roadmap-step"><h3>先完成规则与范围确认</h3><p>确认积分 100 元 1 分与自然年到期；审批会员、活动、签到、兑换和储值参数。把复用、改造、新增功能分别列明。</p></div><div class="roadmap-step"><h3>一期：商城、会员、活动与签到</h3><p>按页面和后端清单开发，接入真实支付、库存、奖励与门店履约。先用样板店完成端到端和异常验收，再扩大使用。</p></div><div class="roadmap-step"><h3>二期：四类 POS 接口互通</h3><p>拿到供应商接口说明与测试环境，逐类确认映射、事件和账本，联调、对账和灰度验证通过后启用对应能力。</p></div></div>
       <div class="section-label"><h3>上线前必须看到的验证结果</h3></div>
-      <ol class="check-list"><li><div><b>状态正确：</b>未开始、待成团、已成团、缺货、过期、失败和完成均有对应操作边界。</div></li><li><div><b>资产一致：</b>支付、退款、积分、余额、优惠券、库存与成长能追到原单和原流水，重复事件不重复处理。</div></li><li><div><b>签到可靠：</b>一天只记一次，奖励待设置不发奖，领取不重复，规则变化保留记录和版本。</div></li><li><div><b>积分口径统一：</b>每满100元1分、每单取整，年度到期提醒和次年清零经过跨年测试。</div></li><li><div><b>权限有效：</b>顾客数据隔离、员工门店范围、运营审批、财务敏感操作及日志经过真实账号测试。</div></li><li><div><b>生产链路可用：</b>接口、真实测试数据、并发、故障补偿和对账分别验收，保留结果与发布版本。</div></li></ol>
+      <ol class="check-list"><li><div><b>状态正确：</b>未开始、待成团、已成团、缺货、过期、失败和完成均有对应操作边界。</div></li><li><div><b>资产一致：</b>支付、退款、积分、余额、优惠券、库存与成长能追到原单和原流水，重复事件不重复处理。</div></li><li><div><b>签到可靠：</b>一天只记一次，奖励待设置不发奖，领取不重复，规则变化保留记录和版本。</div></li><li><div><b>积分口径统一：</b>每满100元1分、每单取整，年度到期提醒和次年清零经过跨年测试。</div></li><li><div><b>商品与分佣：</b>新商品默认不分佣、停佣不发新佣、下架删后旧链接不可买；旧单快照、两级退款及手机流程分别验收。</div></li><li><div><b>权限有效：</b>顾客数据隔离、员工门店范围、运营审批、财务敏感操作及日志经过真实账号测试。</div></li><li><div><b>生产链路可用：</b>接口、真实测试数据、并发、故障补偿和对账分别验收，保留结果与发布版本。</div></li></ol>
     </section>
 
     <section class="final-cta"><div><h3>让领导看得明白，让开发接得住</h3><p>先用原型确认布局和流程，再按完整 Word 逐项确认规则、配置、接口、报价与验收。</p></div><a class="link-button" href="../downloads/final-requirements.docx" download>下载完整需求与评估清单</a></section>
-    <footer class="document-footer"><strong>便民欢线上经营升级 · 2026.10.27</strong><br>本页和原型为拟开发方案及本机交互样板，未连接真实交易和门店数据。实际接口、数据、权限及生产验收属于开发交付范围。奖励、价格、会员门槛与预算等未确认参数，均以审批后的后台规则为准。</footer>
+    <footer class="document-footer"><strong>便民欢线上经营升级 · 2026.11.02</strong><br>本页和原型为拟开发方案及本机交互样板，未连接真实交易和门店数据。实际接口、数据、权限及生产验收属于开发交付范围。奖励、价格、会员门槛与预算等未确认参数，均以审批后的后台规则为准。</footer>
   </main>
 </div>
 </body>
